@@ -2,14 +2,28 @@
 
 *{
   font-family: 'Tw Cen MT', Segoe UI, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body{
+  padding-left: 290px;
   background-color: black;
-  background-image: url(.//app/resources/backgroundImage.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  scroll-behavior: smooth;
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@keyframes opening-animation {
+  0% {
+    transform: translate(0,-100px);
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+

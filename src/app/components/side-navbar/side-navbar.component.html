@@ -1,7 +1,7 @@
-<button id="open-nav-button" (click)="openNavigation()" class="open-nav-button">
-  <mat-icon id="icon">forward</mat-icon>
+<!--<button id="open-nav-button" (click)="openNavigation()" class="open-nav-button">-->
+<!--  <mat-icon id="icon">forward</mat-icon>-->
 
-</button>
+<!--</button>-->
 
 <div id="container" class="container common">
 
@@ -22,10 +22,20 @@
         <a>Home</a>
       </li>
 
+
       <li id="aboutme" (click)="selectAboutme()">
         <mat-icon>person</mat-icon>
         <a>About Me</a>
       </li>
+
+
+      <div id="aboutme-detail" class="detail-bullet-points">
+        <ul class="detail-list">
+          <li id="information" (click)="selectInformation()"><a>Information</a></li>
+          <li id="biography" (click)="selectBiography()"><a>Biography</a></li>
+          <li id="achievements" (click)="selectAchievements()"><a>Achievements</a></li>
+        </ul>
+      </div>
 
 
       <li id="projects" (click)="selectProjects()">
@@ -33,10 +43,12 @@
         <a>Projects</a>
       </li>
 
+
       <li id="skills" (click)="selectSkills()">
         <mat-icon>assignment</mat-icon>
         <a>Skills</a>
       </li>
+
 
       <li id="contact" (click)="selectContact()">
         <mat-icon>phone</mat-icon>
