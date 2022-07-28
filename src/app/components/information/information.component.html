@@ -1,1 +1,52 @@
-<p>information works!</p>
+<div class="container">
+
+  <div class="information-divider">
+    <img id="profile-image" class="profile-image" src="../../../assets/info-image.jpg">
+
+  <div id="profile-container" class="profile-container">
+    <h1>Information</h1>
+
+
+    <div class="profile-divider">
+
+      <mat-divider [vertical]="true"></mat-divider>
+
+      <div class="bullet-points">
+        <h3>Name</h3>
+        <h2>Samir Rademakers</h2>
+        <div class="spacer"></div>
+
+        <h3>Birth</h3>
+        <h2>26 September 2002</h2>
+        <div class="spacer"></div>
+
+        <h3>Nationality</h3>
+        <h2>Dutch</h2>
+        <div class="spacer"></div>
+
+        <h3>Home</h3>
+        <h2>Breda, The Netherlands</h2>
+        <div class="spacer"></div>
+
+        <h3>E-mail</h3>
+        <h2>samir.rademakers@gmail.com</h2>
+        <div class="spacer"></div>
+
+        <h3>Linked-in</h3>
+        <h2><a href="https://www.linkedin.com/in/samir-rademakers-69a4a71bb/" target="_blank">Linked-in.com/Samir-Rademakers</a>
+        </h2>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="button-container">
+    <div (click)="toBiography()" class="button">
+      <a>Read Biography</a>
+    </div>
+    <div (click)="toAchievements()" class="button"><a>See Achievements</a></div>
+  </div>
+
+</div>
+

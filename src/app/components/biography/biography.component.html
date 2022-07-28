@@ -1,1 +1,44 @@
-<p>biography works!</p>
+<div class="container">
+
+  <div class="information-divider">
+    <img id="profile-image" class="profile-image" src="../../../assets/info-image.jpg">
+
+    <div id="profile-container" class="profile-container">
+      <h1>Biography</h1>
+
+
+      <div class="profile-divider">
+
+        <mat-divider [vertical]="true"></mat-divider>
+
+        <div class="bullet-points">
+          <h3>My name is Samir Rademakers, I am 19 years old and I am from The Netherlands. When I was 16 years old I
+            moved out to study
+            technical computer science in Breda, a city in The Netherlands about an hour away from my hometown. Before I
+            started studying I
+            graduated highschool with bilingual education, therefore my English is almost as good as my Dutch.
+          </h3>
+          <h3>From a very young age I have always been interested in computers and in the last two years
+            of highschool I also chose to take computer science as an extra subject. After that I
+            started studying technical computer science at Avans Hogeschool in Breda. Ever since I
+            started studying computer science, I discovered that I have a true passion for developing software.
+          </h3>
+          <h3>
+            In my free time I like to play games, hang out with friends, go out, do fitness and travel. Also in my free
+            time I like to work
+            on my own computer science related projects. One of those projects for example is this website.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="button-container">
+    <div (click)="toInformation()" class="button">
+      <a>Get Information</a>
+    </div>
+    <div (click)="toAchievements()" class="button"><a>See Achievements</a></div>
+  </div>
+
+</div>
+

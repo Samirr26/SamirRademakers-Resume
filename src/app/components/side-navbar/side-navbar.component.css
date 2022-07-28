@@ -70,7 +70,7 @@
   margin-top: 40px;
   cursor: pointer;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 8px;
   transition: 0.2s ease-out;
   position: relative;
   z-index: 1;
@@ -167,18 +167,24 @@
   /*margin-top: -15px;*/
   margin-bottom: 15px;
   width: 90%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   background-color: #0c2747;
   transition: 0.4s ease-out;
   height: 0px;
   opacity: 0;
+  visibility: hidden;
 }
 
 .detail-bullet-points ul li {
   margin: 0px;
   transition: 0.4s ease-out;
+}
 
+.detail-bullet-points ul li a {
+  width: 100%;
+  text-align: left;
+  margin-left: 5px;
 }
 
 .detail-bullet-points ul li:hover {
@@ -203,6 +209,7 @@
 .detail-bullet-points.selected{
   height: 120px;
   opacity: 1;
+  visibility: visible;
 }
 
 

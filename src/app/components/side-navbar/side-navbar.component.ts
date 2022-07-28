@@ -74,8 +74,6 @@ export class SideNavbarComponent implements OnInit {
     home.classList.toggle("selected", true);
 
     this.router.navigate([''])
-    window.scrollTo(0,0)
-
   }
 
   selectAboutme(){
@@ -145,7 +143,8 @@ export class SideNavbarComponent implements OnInit {
     const projects = document.getElementById("projects")
     // @ts-ignore
     projects.classList.toggle("selected", true);
-    window.scrollTo(0,2000)
+
+    this.router.navigate(['projects'])
 
   }
 

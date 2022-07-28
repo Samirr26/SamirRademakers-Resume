@@ -12,13 +12,16 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
 import { InformationComponent } from './components/information/information.component';
 import { BiographyComponent } from './components/biography/biography.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 const routes: Routes = [
   {path: '', component: HomepageComponent},
   {path: 'aboutme/biography', component: BiographyComponent},
   {path: 'aboutme/information', component: InformationComponent},
-  {path: 'aboutme/achievements', component: AchievementsComponent}
+  {path: 'aboutme/achievements', component: AchievementsComponent},
+  {path: 'projects', component: ProjectsComponent}
+
 ]
 
 
@@ -30,7 +33,8 @@ const routes: Routes = [
     AboutmeComponent,
     AchievementsComponent,
     InformationComponent,
-    BiographyComponent
+    BiographyComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

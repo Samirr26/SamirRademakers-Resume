@@ -9,6 +9,8 @@ body{
   padding-left: 290px;
   background-color: black;
   scroll-behavior: smooth;
+  overflow: hidden;
+
 }
 
 html, body { height: 100%; }
@@ -26,4 +28,36 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
+@keyframes opening-animation-bottom {
+  0% {
+    transform: translate(0,100px);
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opening-animation-left {
+  0% {
+    transform: translate(100px,0px);
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opening-animation-right {
+  0% {
+    transform: translate(-100px,0px);
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 

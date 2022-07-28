@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
+import {SideNavbarComponent} from "../side-navbar/side-navbar.component";
 
 @Component({
   selector: 'app-biography',
@@ -6,10 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./biography.component.css']
 })
 export class BiographyComponent implements OnInit {
+  SideNavbar: SideNavbarComponent = new SideNavbarComponent(this.router);
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+
+  toBiography(){
+    this.SideNavbar.selectBiography()
+    this.router.navigate(['aboutme/biography'])
+  }
+
+  toInformation(){
+    this.SideNavbar.selectInformation()
+    this.router.navigate(['aboutme/information'])
+  }
+
+  toAchievements(){
+    this.SideNavbar.selectAchievements()
+    this.router.navigate(['aboutme/achievements'])
+  }
 }
