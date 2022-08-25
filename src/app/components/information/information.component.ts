@@ -10,6 +10,8 @@ import {SideNavbarComponent} from "../side-navbar/side-navbar.component";
 export class InformationComponent implements OnInit {
   SideNavbar: SideNavbarComponent = new SideNavbarComponent(this.router);
 
+  copyString: string = 'Click to copy';
+
 
   constructor(private router: Router) {
     // @ts-ignore
@@ -37,6 +39,23 @@ export class InformationComponent implements OnInit {
   toAchievements(){
     this.SideNavbar.selectAchievements()
     this.router.navigate(['aboutme/achievements'])
+  }
+
+
+  copyText(val: string){
+    const selBox = document.createElement('textarea');
+    selBox.style.position = 'fixed';
+    selBox.style.left = '0';
+    selBox.style.top = '0';
+    selBox.style.opacity = '0';
+    selBox.value = val;
+    document.body.appendChild(selBox);
+    selBox.focus();
+    selBox.select();
+    document.execCommand('copy');
+    document.body.removeChild(selBox);
+
+    this.copyString = 'Copied!'
   }
 
 

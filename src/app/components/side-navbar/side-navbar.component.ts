@@ -162,8 +162,8 @@ export class SideNavbarComponent implements OnInit {
     const contact = document.getElementById("contact")
     // @ts-ignore
     contact.classList.toggle("selected", true);
-    window.scrollTo(0,4000)
 
+    this.router.navigate(['contact'])
   }
 
   scrollDown(){
