@@ -1,45 +1,42 @@
-<div class="container">
+<div  class="container">
 
-  <div class="profile-container">
-    <h1>Project</h1>
+  <div *ngIf="visible" [@slideOutIn] id="main-container" class="profile-container">
+    <h1>{{projects[counter].title}} </h1>
 
 
     <div class="profile-divider">
       <mat-divider [vertical]="true"></mat-divider>
-
       <div class="project-info">
-        <h2 class="project-description">Wat is Lorem Ipsum? Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten</h2>
+        <h2>{{projects[counter].description}}</h2>
       </div>
+    </div>
 
-      <div class="spacer"></div>
-      <mat-divider [vertical]="true"></mat-divider>
+    <div class="pictures-and-skills">
+      <div class="skills">
+        <mat-divider [vertical]="true"></mat-divider>
         <div class="bullet-points">
           <h2 class="skills-title">Skills</h2>
-          <h2>- Java</h2>
-          <h2>- c#</h2>
-          <h2>- stuodio</h2>
-
+          <h2 *ngFor="let skill of projects[counter].skills">○ {{skill}}</h2>
         </div>
-    </div>
-    <div class="pictures-container">
-      <img  class="profile-image" src="../../../assets/info-image.jpg">
-      <img  class="profile-image" src="../../../assets/info-image.jpg">
+      </div>
 
-      <img  class="profile-image" src="../../../assets/info-image.jpg">
-
+      <div class="pictures-container">
+        <img *ngFor="let picture of projects[counter].pictures" src="{{picture}}" alt="img">
+      </div>
     </div>
+
 
   </div>
 
   <div class="button-container">
-    <div  class="button">
+    <div (click)="previousProject()" class="button">
       <mat-icon id="left-arrow">arrow_left</mat-icon>
 
     </div>
 
-    <h2>1/5</h2>
+    <h2>{{counter + 1}}/{{projects.length}}</h2>
 
-    <div  class="button">
+    <div (click)="nextProject()" class="button">
       <mat-icon id="right-arrow">arrow_right</mat-icon>
 
     </div>
