@@ -13,6 +13,7 @@ import { AchievementsComponent } from './components/achievements/achievements.co
 import { InformationComponent } from './components/information/information.component';
 import { BiographyComponent } from './components/biography/biography.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,9 @@ const routes: Routes = [
   {path: 'aboutme/biography', component: BiographyComponent},
   {path: 'aboutme/information', component: InformationComponent},
   {path: 'aboutme/achievements', component: AchievementsComponent},
-  {path: 'projects', component: ProjectsComponent}
+  {path: 'projects', component: ProjectsComponent},
+  {path: 'skills', component: SkillsComponent}
+
 
 ]
 
@@ -34,7 +37,8 @@ const routes: Routes = [
     AchievementsComponent,
     InformationComponent,
     BiographyComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

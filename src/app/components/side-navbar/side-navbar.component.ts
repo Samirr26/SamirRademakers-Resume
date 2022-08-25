@@ -153,8 +153,8 @@ export class SideNavbarComponent implements OnInit {
     const skills = document.getElementById("skills")
     // @ts-ignore
     skills.classList.toggle("selected", true);
-    window.scrollTo(0,3000)
 
+    this.router.navigate(['skills'])
   }
 
   selectContact(){
