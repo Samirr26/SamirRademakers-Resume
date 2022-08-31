@@ -136,7 +136,6 @@ mat-divider{
   color: #0c2747;
 }
 
-
 .button-container .button:hover #right-arrow{
   transition: .2s ease;
   animation: spin;
@@ -157,6 +156,7 @@ mat-divider{
 
 .skills{
   display: flex;
+  height: 99%;
 }
 
 

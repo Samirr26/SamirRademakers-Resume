@@ -6,24 +6,19 @@ export interface Skill{
 
 export const skills: Skill[] = [
   {
-    title: "java",
+    title: "Java",
     stars: 4,
     halfStar: true
   },
   {
     title: "C#",
     stars: 4,
-    halfStar: false
+    halfStar: true
   },
   {
     title: "Android",
     stars: 4,
     halfStar: true
-  },
-  {
-    title: "C",
-    stars: 2,
-    halfStar: false
   },
   {
     title: "UML",
@@ -32,13 +27,8 @@ export const skills: Skill[] = [
   },
   {
     title: "SQL",
-    stars: 2,
+    stars: 3,
     halfStar: true
-  },
-  {
-    title: "C++",
-    stars: 2,
-    halfStar: false
   },
   {
     title: "Angular",
@@ -61,52 +51,12 @@ export const skills: Skill[] = [
     halfStar: true
   },
   {
-    title: "Javascript",
-    stars: 1,
-    halfStar: false
-  },
-  {
-    title: "UX Design",
-    stars: 3,
-    halfStar: false
-  },
-  {
-    title: "Python",
-    stars: 1,
-    halfStar: false
-  },
-  {
     title: "Github",
     stars: 4,
     halfStar: false
   },
   {
-    title: "AWS",
-    stars: 1,
-    halfStar: false
-  },
-  {
     title: "Scrum",
-    stars: 4,
-    halfStar: true
-  },
-  {
-    title: "Cloud",
-    stars: 4,
-    halfStar: false
-  },
-  {
-    title: "Front-end",
-    stars: 3,
-    halfStar: true
-  },
-  {
-    title: "Back-end",
-    stars: 4,
-    halfStar: true
-  },
-  {
-    title: "GUI",
     stars: 4,
     halfStar: true
   },
