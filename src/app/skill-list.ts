@@ -65,5 +65,10 @@ export const skills: Skill[] = [
     stars: 4,
     halfStar: false
   },
+  {
+    title: "CI/CD",
+    stars: 4,
+    halfStar: false
+  },
 
 ]

@@ -16,7 +16,7 @@ export const Projects: Project[] = [
   {
     title: "Crimescripts",
     description: "In my third year of university I did a project with the public prosecution service of the Netherlands (Openbaar Ministerie). As a team we had to develop a tool which will help the government fight money laundering using crypto currency. We developed a crimescript tool. A crimescript is a script which shows what steps a criminal takes in order to complete a criminal activity. The point of a crimescript is making sure you get a very clear and simple overview of the criminal activity. My responsiblity in this project was the front-end part of the tool. Therefore everything shown on the website of the tool was developed by me.",
-    skills: ["HTML","CSS","TypeScript","Angular"],
+    skills: ["HTML","CSS","TypeScript","Angular", "CI/CD"],
     pictures: ["https://cdn.discordapp.com/attachments/616314074547879938/1012833980489400341/unknown.png"]
   },
   {
