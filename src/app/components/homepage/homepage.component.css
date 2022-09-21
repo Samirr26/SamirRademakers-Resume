@@ -15,7 +15,7 @@
 }
 
 .profile-container h1{
-  font-family: 'Tw Cen MT', Segoe UI, sans-serif;
+  font-family: Tw Cen MT;
   font-size: 70px;
   font-weight: bold;
   color: white;
@@ -26,7 +26,7 @@
 }
 
 .profile-container h2{
-  font-family: 'Tw Cen MT', Segoe UI, sans-serif;
+  font-family: Tw Cen MT;
   color: white;
   font-size: 30px;
   padding-bottom: 5px;
