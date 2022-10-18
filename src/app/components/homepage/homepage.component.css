@@ -1,5 +1,3 @@
-@import url('//db.onlinewebfonts.com/c/9b62dc86f936227b3f7b367bd0b6c05e?family=Tw+Cen+MT');
-
 .container{
   width: 100%;
   height: 100%;
@@ -13,11 +11,10 @@
 
 .profile-container{
   animation: opening-animation 1s;
-
 }
 
 .profile-container h1{
-  font-family: 'Tw Cen MT', Segoe UI;
+  font-family: 'Tw Cen MT';
   font-size: 70px;
   font-weight: bold;
   color: white;

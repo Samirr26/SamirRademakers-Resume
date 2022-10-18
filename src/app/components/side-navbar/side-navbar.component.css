@@ -1,3 +1,4 @@
+
 .container{
   background-color: #1c314a;
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -137,7 +138,7 @@
 }
 
 .profile-container h1{
-  font-family: 'Tw Cen MT', Segoe UI, sans-serif;
+    font-family: 'Tw Cen MT';
   margin-top: 2px;
   font-size: 28px;
   color: white;
@@ -146,7 +147,7 @@
 
 
 .profile-container h2{
-  font-family: 'Tw Cen MT', Segoe UI, sans-serif;
+    font-family: 'Tw Cen MT';
   margin-top: -5px;
   font-size: 20px;
   font-style: italic;

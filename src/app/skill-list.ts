@@ -51,9 +51,14 @@ export const skills: Skill[] = [
     halfStar: true
   },
   {
+    title: "Javascript",
+    stars: 3,
+    halfStar: true
+  },
+  {
     title: "Github",
     stars: 4,
-    halfStar: false
+    halfStar: true
   },
   {
     title: "Scrum",
@@ -67,8 +72,13 @@ export const skills: Skill[] = [
   },
   {
     title: "CI/CD",
-    stars: 4,
-    halfStar: false
+    stars: 3,
+    halfStar: true
+  },
+  {
+    title: "DevOps",
+    stars: 3,
+    halfStar: true
   },
 
 ]

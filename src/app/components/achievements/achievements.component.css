@@ -36,7 +36,7 @@
 }
 
 .profile-container h1{
-  font-family: 'Tw Cen MT', Segoe UI, sans-serif;
+  font-family: 'Tw Cen MT';
   font-size: 50px;
   font-weight: bold;
   color: white;
@@ -48,7 +48,7 @@
 }
 
 .profile-container h2{
-  font-family: 'Tw Cen MT Bold', Segoe UI, sans-serif;
+  font-family: 'Tw Cen MT';
   color: white;
   font-size: 30px;
   display: flex;
@@ -58,7 +58,7 @@
 }
 
 .profile-container h3{
-  font-family: 'Tw Cen MT', Segoe UI, sans-serif;
+  font-family: 'Tw Cen MT';
   color: white;
   font-size: 21px;
   margin-top: -10px;
@@ -110,7 +110,7 @@
 
 .button-container .button a{
   transition: 0.2s ease-out;
-  font-family: 'Tw Cen MT', Segoe UI, sans-serif;
+  font-family: 'Tw Cen MT';
   font-size: 20px;
   font-weight: 550;
 
